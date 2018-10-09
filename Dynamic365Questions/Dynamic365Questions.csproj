@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CeasarCipher.cs" />
+    <Compile Include="DigitalRoot.cs" />
+    <Compile Include="PalindromeGenerator.cs" />
+    <Compile Include="PalindromeGeneratorBetter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringChecker.cs" />
+    <Compile Include="StringCheckerBetter.cs" />
+    <Compile Include="StringCompression.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
