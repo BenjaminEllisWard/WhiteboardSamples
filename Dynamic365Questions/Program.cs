@@ -32,7 +32,7 @@ namespace Dynamic365Questions
             //Console.WriteLine(betterStringCheck.CheckString("This is a test", "This is a test"));
 
             var cipher = new CeasarCipher();
-            Console.WriteLine(cipher.Cipher("-100This is a test."));
+            Console.WriteLine(cipher.Cipher("1This is a test."));
         }
     }
 }
