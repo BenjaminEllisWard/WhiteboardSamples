@@ -16,14 +16,16 @@ namespace Dynamic365Questions
             bool isPal = true;
             List<int> Pal = new List<int>();
 
-            while (number / 10 != 0 || number > 0)
+            while (number > 0)
             {
+                // add last digit of number to list, then remove last digit from number
                 Pal.Add(number % 10);
                 number /= 10;
             }
 
             for (int i = 0; i <= Pal.Count / 2; ++i)
             {
+                // check first digit against last, converge iterations toward the middle of list
                 if (Pal[i] != Pal[Pal.Count - 1 - i])
                 {
                     isPal = false;
@@ -39,33 +41,42 @@ namespace Dynamic365Questions
             if (Check(number) == false)
             {
                 int pal = number;
-                int x = 10;
+
+                // number's order of magnitude
                 int power = Convert.ToInt32(Math.Floor(Math.Log10(number)));
 
 
-                while (number / 10 > 0 || number % 10 != 0)
+                while (number > 0)
                 {
+                    // last digit is raised to a power and added to pal
                     pal += (number % 10) * Convert.ToInt32(Math.Pow(10, power));
-                    x *= 10;
-                    power--;
+
+                    // remove last digit from number
                     number /= 10;
+
+                    // next iteration of loop will raise next digit to one power less the current iteration
+                    power--;
                 }
+
+                // Recurses if pal is under 1,000,000 and is not a palindrome
                 while (Check(pal) == false && pal < 1000000)
                 {
                     pal = Generate(pal);
                 }
                 return pal;
             }
+
+            // return number if it is already a palindrome
             return number;
         }
 
-        public string output(int number)
+        public string Output(int number)
         {
-            string message = null;
+            int pal = 0;
 
-            message += Generate(number).ToString();
+            pal += Generate(number);
 
-            return message == "1000000" ? "No palindrone under 1,000,000" : message;
+            return pal >= 1000000 ? "No palindrome under 1,000,000" : pal.ToString();
         }
     }
 }

@@ -33,8 +33,10 @@ namespace Dynamic365Questions
 
         public int Output(int number)
         {
+            // check if number is equal to its reverse
             while (Check(number, Reverse(number)) == false)
             {
+                // add number to its reverse
                 number += Reverse(number);
             }
 

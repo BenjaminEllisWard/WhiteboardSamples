@@ -17,7 +17,7 @@ namespace Dynamic365Questions
             //digitalRoot.Run(109);
 
             PalindromeGenerator pal = new PalindromeGenerator();
-            Console.WriteLine(pal.output(2562));
+            Console.WriteLine(pal.Output(999998));
 
             //var gen = new PalindromeGeneratorBetter();
             //Console.WriteLine(gen.Output(2562));
