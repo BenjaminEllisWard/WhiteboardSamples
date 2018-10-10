@@ -13,17 +13,14 @@ namespace Dynamic365Questions
             //StringCompression compression = new StringCompression();
             //compression.Run("Compresss thiiiiis message");
 
-            DigitalRoot digitalRoot = new DigitalRoot();
-            digitalRoot.Run(109);
+            //DigitalRoot digitalRoot = new DigitalRoot();
+            //digitalRoot.Run(109);
 
-            //PalindromeGenerator gen = new PalindromeGenerator();
-            //Console.WriteLine(gen.Check(22322).ToString());
-
-            //PalindromeGenerator pal = new PalindromeGenerator();
-            //Console.WriteLine(pal.output(2562));
+            PalindromeGenerator pal = new PalindromeGenerator();
+            Console.WriteLine(pal.output(2562));
 
             //var gen = new PalindromeGeneratorBetter();
-            //Console.WriteLine(gen.Output(334));
+            //Console.WriteLine(gen.Output(2562));
 
             //var stringcheck = new StringChecker();
             //Console.WriteLine(stringcheck.Check("asdf","asd"));

@@ -9,7 +9,7 @@ namespace Dynamic365Questions
     class PalindromeGenerator
     {
         // generate a palindrome by adding a number to its reversed self. If that number is not a palindrome, repeat the operation until one
-        // is acheived. Return fals if a palindrome less than 1,000,000 cannot be generated.
+        // is acheived. Return false if a palindrome less than 1,000,000 cannot be generated.
 
         public bool Check(int number)
         {
