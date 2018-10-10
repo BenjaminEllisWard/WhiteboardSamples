@@ -12,12 +12,15 @@ namespace Dynamic365Questions
         public int GetDigitalRoot(int number)
         {
             int digit = 0;
-            while (number % 10 != 0)
+
+            // add all digits of a number together
+            while (number > 0)
             {
                 digit += number % 10;
                 number /= 10;
             }
 
+            // if the sum of the digits of a number is greater than 9, recurse the method
             if (digit / 10 != 0)
             {
                 digit = GetDigitalRoot(digit);

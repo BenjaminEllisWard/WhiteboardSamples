@@ -13,8 +13,8 @@ namespace Dynamic365Questions
             //StringCompression compression = new StringCompression();
             //compression.Run("Compresss thiiiiis message");
 
-            //DigitalRoot digitalRoot = new DigitalRoot();
-            //digitalRoot.Run(9998);
+            DigitalRoot digitalRoot = new DigitalRoot();
+            digitalRoot.Run(109);
 
             //PalindromeGenerator gen = new PalindromeGenerator();
             //Console.WriteLine(gen.Check(22322).ToString());
@@ -31,8 +31,8 @@ namespace Dynamic365Questions
             //var betterStringCheck = new StringCheckerBetter();
             //Console.WriteLine(betterStringCheck.CheckString("This is a test", "This is a test"));
 
-            var cipher = new CeasarCipher();
-            Console.WriteLine(cipher.Cipher("-27This is a test!"));
+            //var cipher = new CeasarCipher();
+            //Console.WriteLine(cipher.Cipher("-27This is a test!"));
         }
     }
 }
