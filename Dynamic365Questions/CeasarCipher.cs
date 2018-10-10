@@ -60,13 +60,13 @@ namespace Dynamic365Questions
             }
 
             // find how many shifts in the alphabet the cipher executes
-            while (cipher > 26)
+            while (cipher >= 26)
             {
-                cipher /= 26;
+                cipher -= 26;
             }
             
             // reset the negativity of cipher if applicable
-            cipher = isNeg == true ? cipher *= -1 : cipher;
+            if (isNeg == true) { cipher *= -1; }
 
             return cipher;
         }
@@ -77,28 +77,36 @@ namespace Dynamic365Questions
 
             foreach (char c in message)
             {
+                // condition for uppercase letters
                 if (c < 91 && c > 64)
                 {
+                    // condition if shift lands within the uppercase alphabet
                     if (c + cipher < 91 && c + cipher > 64)
                     {
                         cipherMessage += (char)(c + cipher);
                     }
+                    // enforce wrap-around when shift takes a letter beyond the ASCII range of uppercase letters
                     else
                     {
-                        cipherMessage += c + cipher < 65 ? c + 26 + cipher : c - 26 + cipher;
+                        // If the shift lands before 'A', subtract 26. If beyond 'Z', subtract 26.
+                        cipherMessage += c + cipher < 65 ? (char)(c + 26 + cipher) :(char)(c - 26 + cipher);
                     }
                 }
+                // condition for lowercase letters
                 else if (c > 96 && c < 123)
                 {
+                    // condition if shift lands within the lowercase alphabet
                     if (c + cipher < 123 && c + cipher > 96)
                     {
                         cipherMessage += (char)(c + cipher);
                     }
                     else
                     {
-                        cipherMessage += c + cipher < 97 ? c + 26 + cipher : c - 26 + cipher;
+                        // If shift lands before 'a', add 26. If shift lands beyond 'z', subtract 26.
+                        cipherMessage += c + cipher < 97 ? (char)(c + 26 + cipher) : (char)(c - 26 + cipher);
                     }
                 }
+                // condition for non-letter chars
                 else
                 {
                     cipherMessage += c;
