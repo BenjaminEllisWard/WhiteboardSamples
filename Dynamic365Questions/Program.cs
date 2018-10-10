@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace Dynamic365Questions
 {
+    // This project demonstrates solutions to sample whiteboarding questions. See the initial comment at the top of each class
+    // to see the problem being solved.
+
     class Program
     {
         static void Main(string[] args)
         {
-            //StringCompression compression = new StringCompression();
-            //compression.Run("Compresss thiiiiis message");
+            // Comment/uncomment instantiation/method statement pairs to see demonstration
+            // of each class.
+
+            StringCompression compression = new StringCompression();
+            compression.Run("Compresss thiiiiis message");
 
             //DigitalRoot digitalRoot = new DigitalRoot();
             //digitalRoot.Run(109);
 
-            PalindromeGenerator pal = new PalindromeGenerator();
-            Console.WriteLine(pal.Output(999998));
+            //PalindromeGenerator pal = new PalindromeGenerator();
+            //Console.WriteLine(pal.Output(999998));
 
             //var gen = new PalindromeGeneratorBetter();
             //Console.WriteLine(gen.Output(2562));

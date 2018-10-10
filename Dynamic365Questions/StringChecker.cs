@@ -8,7 +8,8 @@ namespace Dynamic365Questions
 {
     class StringChecker
     {
-        // Write a function that can determine if two string are one edit (insert, replace, or remove char) or less within equivalence
+        // Write a function that can determine if two string are one edit (insert, replace,
+        // or remove char) or less within equivalence
 
         public bool Check(string first, string second)
         {
