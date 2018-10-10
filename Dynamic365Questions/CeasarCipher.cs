@@ -8,9 +8,12 @@ namespace Dynamic365Questions
 {
     class CeasarCipher
     {
+        // Create a function that takes a string that is prefixed with a number and applies a Ceasar cipher to the string
+        // by the amount of the prefix. For example, the string "2test" will become "vguv". Cipher should not affect
+        // puncuation and symbols.
+
         public string Cipher(string message)
         {
-            string cipherString = null;
             int cipher = 0;
             bool IsNeg = false;
 
