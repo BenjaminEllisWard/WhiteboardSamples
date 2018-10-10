@@ -11,7 +11,7 @@ namespace Dynamic365Questions
         static void Main(string[] args)
         {
             //StringCompression compression = new StringCompression();
-            //compression.Run();
+            //compression.Run("Compresss thiiiiis message");
 
             //DigitalRoot digitalRoot = new DigitalRoot();
             //digitalRoot.Run(9998);
