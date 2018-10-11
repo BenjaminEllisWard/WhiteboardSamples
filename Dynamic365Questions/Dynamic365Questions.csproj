@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CeasarCipher.cs" />
+    <Compile Include="ClockAngle.cs" />
     <Compile Include="DigitalRoot.cs" />
+    <Compile Include="LongestSubstring.cs" />
+    <Compile Include="LongestSubstringBetter.cs" />
     <Compile Include="PalindromeGenerator.cs" />
     <Compile Include="PalindromeGeneratorBetter.cs" />
     <Compile Include="Program.cs" />
@@ -52,6 +55,7 @@
     <Compile Include="StringChecker.cs" />
     <Compile Include="StringCheckerBetter.cs" />
     <Compile Include="StringCompression.cs" />
+    <Compile Include="Target.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

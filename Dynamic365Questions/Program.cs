@@ -16,8 +16,8 @@ namespace Dynamic365Questions
             // Comment/uncomment instantiation/method statement pairs to see demonstration
             // of each class.
 
-            StringCompression compression = new StringCompression();
-            compression.Run("Compresss thiiiiis message");
+            //StringCompression compression = new StringCompression();
+            //compression.Run("Compresss thiiiiis message");
 
             //DigitalRoot digitalRoot = new DigitalRoot();
             //digitalRoot.Run(109);
@@ -36,6 +36,17 @@ namespace Dynamic365Questions
 
             //var cipher = new CeasarCipher();
             //Console.WriteLine(cipher.Cipher("-27This is a test!"));
+
+            //var longSubS = new LongestSubstring();
+            //longSubS.Run("The rain in Spain stays mainly in the plain.");
+
+            //Console.WriteLine(LongestSubstringBetter.GetLongestSub("abccdefg"));
+
+            //var findSum = new Target();
+            //findSum.Run(new int[]{ 3, 1, 2, 4}, 5);
+
+            var angleFinder = new ClockAngle();
+            Console.WriteLine(angleFinder.Angle(DateTime.Now));
         }
     }
 }
