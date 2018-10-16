@@ -42,11 +42,11 @@ namespace Dynamic365Questions
 
             //Console.WriteLine(LongestSubstringBetter.GetLongestSub("abccdefg"));
 
-            //var findSum = new Target();
-            //findSum.Run(new int[]{ 3, 1, 2, 4}, 5);
+            var findSum = new Target();
+            findSum.Run(new int[] { 3, 1, 2, 4 }, 4);
 
-            var angleFinder = new ClockAngle();
-            Console.WriteLine(angleFinder.Angle(DateTime.Now));
+            //var angleFinder = new ClockAngle();
+            //Console.WriteLine(angleFinder.Angle(DateTime.Now));
         }
     }
 }

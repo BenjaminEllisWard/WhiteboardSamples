@@ -23,38 +23,16 @@ namespace Dynamic365Questions
 
             foreach (int n in integers)
             {
-                if (n < target)
+                // Condition ensures that two distinct members satisfy solution.
+                if (integers.Contains(target - n) && Array.IndexOf(integers, target - n) != Array.IndexOf(integers, n))
                 {
-                    if (integers.Contains(target - n))
-                    {
-                        solution[0] = n;
-                        solution[1] = target - n;
-                        solution = AscSort(solution);
-                        return solution;
-                    }
+                    solution[0] = Math.Min(n, target - n);
+                    solution[1] = Math.Max(n, target - n);
+                    return solution;
                 }
             }
 
             throw new Exception("Target value is not equal to the sum of any two values of input array.");
-        }
-
-        public int[] AscSort(int[] a)
-        {
-            for (int i = 0; i < a.Length - 1; ++i)
-            {
-                for (int j = i + 1; j < a.Length; ++j)
-                {
-                    if (a[i] > a[j])
-                    {
-                        int x = a[i];
-
-                        a[i] = a[j];
-                        a[j] = x;
-                    }
-                }
-            }
-
-            return a;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Dynamic365Questions
         // Output angle should be 180 degrees or less.
 
         // Plan: find angle from 12 oclock position for each hand; subtract greater angle from lesser angle;
-        //       if angle is greater than 180 degrees, subtract 180.
+        //       if angle is greater than 180 degrees, subtract from 360.
 
         public double Angle(DateTime time)
         {
