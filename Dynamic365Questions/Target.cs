@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dynamic365Questions
 {
-    class Target
+    public class Target
     {
         // Given an array of integers, return two integers such that they add up to a specific target. Assume
         // that each input array would have exactly one solution, and you may not use the same element twice.

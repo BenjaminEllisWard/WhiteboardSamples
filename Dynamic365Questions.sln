@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic365Questions", "Dynamic365Questions\Dynamic365Questions.csproj", "{2090E70C-B0A6-4557-AF48-5A73E548C19A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{E545E5EE-0989-4AE5-98D1-C6569A882CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2090E70C-B0A6-4557-AF48-5A73E548C19A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2090E70C-B0A6-4557-AF48-5A73E548C19A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2090E70C-B0A6-4557-AF48-5A73E548C19A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E545E5EE-0989-4AE5-98D1-C6569A882CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E545E5EE-0989-4AE5-98D1-C6569A882CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E545E5EE-0989-4AE5-98D1-C6569A882CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E545E5EE-0989-4AE5-98D1-C6569A882CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -43,7 +43,7 @@ namespace Dynamic365Questions
             //Console.WriteLine(LongestSubstringBetter.GetLongestSub("abccdefg"));
 
             var findSum = new Target();
-            findSum.Run(new int[] { 3, 1, 2, 4 }, 4);
+            findSum.Run(new int[] { 1, 2, 4}, 6);
 
             //var angleFinder = new ClockAngle();
             //Console.WriteLine(angleFinder.Angle(DateTime.Now));
