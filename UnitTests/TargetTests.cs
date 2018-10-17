@@ -5,7 +5,7 @@ using Dynamic365Questions;
 namespace UnitTests
 {
     [TestClass]
-    public class UnitTest1
+    public class TargetTests
     {
         [TestMethod]
         public void FindSoln_WithValidSoln()
