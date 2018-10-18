@@ -49,7 +49,7 @@ namespace Dynamic365Questions
             //Console.WriteLine(angleFinder.Angle(DateTime.Now));
 
             var threeSum = new _3Sum();
-            foreach (int[] soln in threeSum.FindTrip(new int[] { -2, -1, 0, 1, 2, 3 }))
+            foreach (int[] soln in threeSum.FindTrip(new int[] { -2, 3,-1, 1, 0, 2, 0, 1, -1, 2, 2, 3 }))
             {
                 Console.WriteLine(string.Join(", ", soln));
             }

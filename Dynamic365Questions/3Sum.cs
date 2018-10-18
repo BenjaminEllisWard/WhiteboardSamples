@@ -14,12 +14,27 @@ namespace Dynamic365Questions
         {
             List<int[]> solutions = new List<int[]>();
 
+            // Sort is necessary to skip duplicate values.
+            Array.Sort(numbers);
+
             for (int h = 0; h < numbers.Length - 2; h++)
             {
+                // these statements skip duplicate values
+                if (h > 0 && numbers[h] == numbers[h - 1])
+                    continue;
+
                 for (int i = h + 1; i < numbers.Length - 1; ++i)
                 {
+
+                    if (numbers[i] == numbers[i - 1])
+                        continue;
+
                     for (int j = i + 1; j < numbers.Length; ++j)
                     {
+
+                        if (numbers[j] == numbers[j - 1])
+                            continue;
+
                         if (numbers[h] + numbers[i] + numbers[j] == 0)
                         {
                             solutions.Add(new int[] { numbers[h], numbers[i], numbers[j] });
