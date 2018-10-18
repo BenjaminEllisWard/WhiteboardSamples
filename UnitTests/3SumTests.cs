@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Dynamic365Questions;
+using System.Collections.Generic;
 
 namespace UnitTests
 {
@@ -11,12 +12,17 @@ namespace UnitTests
         public void FindTrip_WithValidSoln()
         {
             // Arrange
-            int[] numbers = new int[] { -2, -1, 0, 1 };
-            int[] expected = new int[] { -1, 0, 1 };
+            int[] numbers = new int[] { -2, -1, 0, 1, 2, 3 };
+            List<int[]> expected = new List<int[]>
+            {
+                new int[] { -2, -1, 3 },
+                new int[] { -2, 0, 2 },
+                new int[] { -1, 0, 1 }
+            };
             _3Sum test = new _3Sum();
 
             // Act
-            int[] actual = test.FindTrip(numbers);
+            List<int[]> actual = test.FindTrip(numbers);
 
             // Assert
             CollectionAssert.AreEqual(expected, actual);
@@ -26,13 +32,13 @@ namespace UnitTests
         public void FindTrip_WithNoValidSoln()
         {
             // Arrange
-            int[] numbers = new int[] { -2, -1, 0, 3 };
+            int[] numbers = new int[] { -2, -1, 0, 6 };
             _3Sum test = new _3Sum();
 
             // Act
             try
             {
-                int[] actual = test.FindTrip(numbers);
+                List<int[]> actual = test.FindTrip(numbers);
             }
             catch (Exception e)
             {
