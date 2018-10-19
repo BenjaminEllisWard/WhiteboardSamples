@@ -44,7 +44,7 @@ namespace Dynamic365Questions
 
         public int FindOverlap(int coord1, int distance1, int coord2, int distance2)
         {
-            // set the width/heoght to the smaller value, since this is the largest
+            // set the width/height to the smaller value, since this is the largest
             // possible value for overlap.
             int overlap = distance1;
 

@@ -55,7 +55,7 @@ namespace Dynamic365Questions
             //}
 
             RectangleOverlap overlap = new RectangleOverlap();
-            Console.WriteLine(overlap.FindOverlapArea(new Rectangle(-2, -2, 2, 2), new Rectangle(-2, -2, 4, 4)));
+            Console.WriteLine(overlap.FindOverlapArea(new Rectangle(0, 0, 8, 8), new Rectangle(4, 4, 8, 8)));
         }
     }
 }
