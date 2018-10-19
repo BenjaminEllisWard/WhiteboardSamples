@@ -53,6 +53,7 @@
     <Compile Include="PalindromeGeneratorBetter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectangleOverlap.cs" />
     <Compile Include="StringChecker.cs" />
     <Compile Include="StringCheckerBetter.cs" />
     <Compile Include="StringCompression.cs" />

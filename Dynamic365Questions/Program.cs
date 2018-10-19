@@ -48,11 +48,14 @@ namespace Dynamic365Questions
             //var angleFinder = new ClockAngle();
             //Console.WriteLine(angleFinder.Angle(DateTime.Now));
 
-            var threeSum = new _3Sum();
-            foreach (int[] soln in threeSum.FindTrip(new int[] { -2, 3,-1, 1, 0, 2, 0, 1, -1, 2, 2, 3 }))
-            {
-                Console.WriteLine(string.Join(", ", soln));
-            }
+            //var threeSum = new _3Sum();
+            //foreach (int[] soln in threeSum.FindTrip(new int[] { -2, 3,-1, 1, 0, 2, 0, 1, -1, 2, 2, 3 }))
+            //{
+            //    Console.WriteLine(string.Join(", ", soln));
+            //}
+
+            RectangleOverlap overlap = new RectangleOverlap();
+            Console.WriteLine(overlap.FindOverlapArea(new Rectangle(-2, -2, 2, 2), new Rectangle(-2, -2, 4, 4)));
         }
     }
 }
