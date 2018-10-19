@@ -42,6 +42,7 @@ namespace Dynamic365Questions
             return width * height > 0 ? width * height : 0;
         }
 
+        // Calculates the length of the overlap of two lines that lie on the same axis.
         public int FindOverlap(int coord1, int distance1, int coord2, int distance2)
         {
             // set the width/height to the smaller value, since this is the largest
